@@ -25,7 +25,7 @@
 ## Define the entry point to run the application
 #ENTRYPOINT ["java", "-jar", "app.jar"]
 # Use Maven image to build the project
-FROM maven:3.6.0-jdk-11-slim AS build  
+FROM maven:3.6.0-jdk-11-slim AS build
 
 # Set working directory inside the container
 WORKDIR /app
